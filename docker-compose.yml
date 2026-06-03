@@ -1,0 +1,9 @@
+services:
+  api:
+    build: .
+    container_name: poshbloc_api
+    ports:
+      - "4090:4090"
+    env_file:
+      - .env
+    restart: unless-stopped
