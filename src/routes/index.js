@@ -29,7 +29,7 @@ Object.keys(models).forEach((modelName) => {
         where: Object.keys(where).length > 0 ? where : undefined,
         limit: parseInt(limit),
         offset: parseInt(offset),
-        order: [['id', 'DESC']],
+        order: [[Model.primaryKeyAttributes[0] || 'id', 'DESC']],
       });
 
       res.json({
