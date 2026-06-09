@@ -5,12 +5,12 @@ function generateSwaggerSpec() {
     openapi: '3.0.3',
     info: {
       title: 'Poshbloc API',
-      version: '1.0.0',
+      version: '1.0.1',
       description: 'REST API for Poshbloc MySQL Database. Provides CRUD access to all tables.',
       contact: { name: 'Poshbloc API Support' },
     },
     servers: [
-      { url: `http://localhost:${process.env.PORT || 3000}`, description: 'Development server' },
+      { url: `http://154.26.137.37:${process.env.PORT || 3000}`, description: 'Development server' },
     ],
     components: {
       securitySchemes: {
